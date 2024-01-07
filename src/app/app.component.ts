@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'myproject';
+  name='amit';
+  framework='angular';
+  uname=new FormControl();
+  display()
+  {
+    alert('Welcome to Angular 16!!!!')
+  }
+  updateNames()
+  {
+    this.uname.setValue("AMITAVA")
+
+  }
+
 }

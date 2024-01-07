@@ -1,0 +1,17 @@
+<h2>All Mobiles</h2>
+<hr><br>
+<table border="1" cellPadding="5">
+
+    <tr>
+        <td>Phone Name</td>
+        <td>Phone Price</td>
+        <td>Phone Stock</td>
+        
+    </tr>
+
+    <tr *ngFor="let x of products">
+        <td>{{x.name| uppercase}} </td>
+        <td>{{x.price}}</td>
+        <td>{{x.stock}}</td>
+        </tr>
+</table>
